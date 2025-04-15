@@ -110,7 +110,7 @@ jobs:
         cd tests
         $XVFB bash run-tests.sh
     - name: Uploading Build Artifacts
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4.6.2
       with:
         name: aseprite-binary
         path: ./build/aseprite
