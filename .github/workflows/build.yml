@@ -109,3 +109,8 @@ jobs:
         export ASEPRITE=$PWD/build/bin/aseprite
         cd tests
         $XVFB bash run-tests.sh
+    - name: Uploading Build Artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: aseprite-binary
+        path: ./build/aseprite
